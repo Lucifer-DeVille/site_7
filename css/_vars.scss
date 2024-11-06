@@ -1,0 +1,49 @@
+$color-text: #fff;
+$gap: 32px;
+$width-site: 1200px;
+$input-border: 1px solid #888;
+
+@mixin first-title {
+    font-weight: 600;
+    font-size: 64px;
+    color: $color-text;
+}
+
+@mixin second-title {
+    font-weight: 600;
+    font-size: 48px;
+}
+
+@mixin third-title {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+@mixin fourth-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+}
+
+@mixin flexible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin checkbox {
+    width: 15px;
+    height: 15px;
+}
+
+@mixin hover-btn {
+    transition: all 600ms;
+    background: #000;
+    color: #fff;
+}
+
+@mixin hover-link {
+    transition: all 500ms;
+    color: #888;
+    text-decoration: none;
+}

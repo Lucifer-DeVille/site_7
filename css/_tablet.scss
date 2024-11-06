@@ -1,0 +1,56 @@
+@media (max-width: 1248px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    
+
+
+}
+
+@media (max-width: 1042px) {
+    .footer {
+        &__logo {
+            display: none;
+        }
+    }
+
+    .filtering-form {
+        right: 0;
+    }
+
+    .cart {
+
+        &__content {
+            margin-right: 5px;
+        }
+
+        &__btn-box {
+            gap: 14px;
+        }
+
+        &__btn {
+            font-size: 12px;
+            width: 163px;
+        }
+
+        &__btn:nth-child(2) {
+            background: #000;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .for {
+       &__content {
+        gap: 30px;
+       }
+
+       &__item {
+            height: 268px;
+       }
+    }
+}
+
