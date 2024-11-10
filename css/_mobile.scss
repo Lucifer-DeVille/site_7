@@ -53,12 +53,38 @@
 
     .cart {
 
+        gap: 48px 1rem; 
+        margin-top: 92px;
+
+        &__name-box {
+            display: none;
+        }
+
         &__info-img {
             display: none;
         }
 
+        &__info-title {
+            font-size: 18px;
+        }
+
+        &__info-text {
+            font-size: 12px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+        }
+
+        &__info-value {
+            font-size: 12px;
+        }
+
         &__content {
             grid-column: auto / span 6;
+        }
+
+        &__btn {
+            font-size: 12px;
+            width: 163px;
         }
         
         &__form {
@@ -69,6 +95,7 @@
     .for {
         &__title {
             font-size: 24px;
+            margin-top: 32px;
         }
 
         &__content {
@@ -108,10 +135,11 @@
     .product {
         &__title {
             font-size: 24px;
+            margin-top: 36px;
         }
 
         &__content {
-            gap: 30px 20px;
+            gap: 32px 20px;
         }
     }
 
@@ -120,16 +148,23 @@
 
         &__title {
             font-size: 18px;
+            margin-top: 9px;
+            margin-bottom: 4px;
         }
 
         &__text {
             font-size: 14px;
+            margin-bottom: 8px;
         }
 
         &__value {
             font-size: 18px;
         }
 
+    }
+
+    .link-box {
+        margin-top: 36px;
     }
 
     .footer {

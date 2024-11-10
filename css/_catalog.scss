@@ -127,6 +127,12 @@
         width: 190px;
         border-radius: 20px;
         float: right;
+        transition: all, 400ms;
+        &:hover {
+            color: #fff;
+            background: #000;
+
+        }
     }
 }
 

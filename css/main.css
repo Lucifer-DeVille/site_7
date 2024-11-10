@@ -74,6 +74,9 @@ input, button, select {
   color: #fff;
   font-size: 16px;
 }
+.header__menu-link:hover {
+  text-decoration: underline;
+}
 .header__menu-bold {
   font-weight: 600;
 }
@@ -178,6 +181,9 @@ input, button, select {
   color: #fff;
   text-decoration: underline;
 }
+.main__link:hover {
+  text-decoration: none;
+}
 
 .for__title {
   margin-top: 64px;
@@ -280,7 +286,7 @@ input, button, select {
 }
 
 .link-box {
-  margin-top: 31px;
+  margin-top: 32px;
   margin-bottom: 64px;
 }
 .link-box__link {
@@ -328,6 +334,9 @@ input, button, select {
 .footer__link {
   color: #888;
   font-size: 14px;
+}
+.footer__link:hover {
+  text-decoration: underline;
 }
 .footer__icons {
   display: flex;
@@ -491,6 +500,11 @@ input, button, select {
   width: 190px;
   border-radius: 20px;
   float: right;
+  transition: all, 400ms;
+}
+.filtering-form__btn:hover {
+  color: #fff;
+  background: #000;
 }
 
 .radio__input:disabled + .radio__label::before {
@@ -675,17 +689,18 @@ input, button, select {
   display: grid;
   grid-auto-flow: dense;
   grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
-  gap: 1rem;
+  gap: 64px 1rem;
+  margin-top: 64px;
 }
 .cart__content {
   grid-column: auto/span 8;
-  margin-top: 64px;
 }
 .cart__name-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 14px;
+  padding-right: 27px;
 }
 .cart__item {
   border-top: 0.5px solid #CACDD8;
@@ -702,9 +717,6 @@ input, button, select {
 }
 .cart__info {
   max-width: 276px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
 }
 .cart__info-title {
   font-size: 24px;
@@ -714,11 +726,14 @@ input, button, select {
 .cart__info-text {
   font-size: 14px;
   color: #888888;
+  margin-top: 14px;
+  margin-bottom: 16px;
 }
 .cart__info-value {
   font-weight: 500;
 }
 .cart__link-box {
+  margin-top: 15px;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -733,6 +748,7 @@ input, button, select {
   text-decoration: none;
 }
 .cart__number {
+  font-family: "Poppins", serif;
   width: 71px;
   height: 51px;
   padding-left: 13px;
@@ -780,7 +796,6 @@ input, button, select {
   border-radius: 20px;
   height: 556px;
   grid-column: auto/span 4;
-  margin-top: 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -800,7 +815,7 @@ input, button, select {
 .cart__form-input {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #CACDD8;
   width: 288px;
   padding-bottom: 3px;
   font-size: 14px;
@@ -865,19 +880,23 @@ input, button, select {
   .filtering-form {
     right: 0;
   }
-  .cart__content {
-    margin-right: 5px;
+  .cart {
+    margin-top: 66px;
   }
   .cart__btn-box {
     gap: 14px;
-  }
-  .cart__btn {
-    font-size: 12px;
-    width: 163px;
+    margin-top: 0;
   }
   .cart__btn:nth-child(2) {
     background: #000;
     color: #fff;
+  }
+  .cart__btn:nth-child(2):hover {
+    background: #fff;
+    color: #000;
+  }
+  .product__content {
+    gap: 30px 20px;
   }
 }
 @media (max-width: 1024px) {
@@ -933,17 +952,40 @@ input, button, select {
     margin-top: 82px;
     font-size: 48px;
   }
+  .cart {
+    gap: 48px 1rem;
+    margin-top: 92px;
+  }
+  .cart__name-box {
+    display: none;
+  }
   .cart__info-img {
     display: none;
   }
+  .cart__info-title {
+    font-size: 18px;
+  }
+  .cart__info-text {
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+  }
+  .cart__info-value {
+    font-size: 12px;
+  }
   .cart__content {
     grid-column: auto/span 6;
+  }
+  .cart__btn {
+    font-size: 12px;
+    width: 163px;
   }
   .cart__form {
     grid-column: auto/span 4;
   }
   .for__title {
     font-size: 24px;
+    margin-top: 32px;
   }
   .for__content {
     grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
@@ -969,21 +1011,28 @@ input, button, select {
   }
   .product__title {
     font-size: 24px;
+    margin-top: 36px;
   }
   .product__content {
-    gap: 30px 20px;
+    gap: 32px 20px;
   }
   .card {
     max-width: 343px;
   }
   .card__title {
     font-size: 18px;
+    margin-top: 9px;
+    margin-bottom: 4px;
   }
   .card__text {
     font-size: 14px;
+    margin-bottom: 8px;
   }
   .card__value {
     font-size: 18px;
+  }
+  .link-box {
+    margin-top: 36px;
   }
   .footer__info {
     gap: 80px;

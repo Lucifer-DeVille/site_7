@@ -21,23 +21,27 @@
     }
 
     .cart {
-
-        &__content {
-            margin-right: 5px;
-        }
+        margin-top: 66px;
 
         &__btn-box {
             gap: 14px;
-        }
-
-        &__btn {
-            font-size: 12px;
-            width: 163px;
+            margin-top: 0;
         }
 
         &__btn:nth-child(2) {
             background: #000;
             color: #fff;
+        }
+
+        &__btn:nth-child(2):hover {
+            background: #fff;
+            color: #000;
+        }
+    }
+
+    .product {
+        &__content {
+            gap: 30px 20px;
         }
     }
 }

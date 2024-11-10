@@ -11,16 +11,17 @@
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr)); 
-    gap: 1rem;
+    gap: 64px 1rem;
+    margin-top: 64px;
 
     &__content {
         grid-column: auto / span 8;
-        margin-top: 64px;
     }
     
     &__name-box {
         @include flexible;
         margin-bottom: 14px;
+        padding-right: 27px;
     }
 
     &__item {
@@ -40,9 +41,6 @@
 
     &__info {
         max-width: 276px;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
     }
 
     &__info-title {
@@ -52,6 +50,8 @@
     &__info-text {
         font-size: 14px;
         color: #888888;
+        margin-top: 14px;
+        margin-bottom: 16px;
     }
 
     &__info-value {
@@ -59,6 +59,7 @@
     }
 
     &__link-box {
+        margin-top: 15px;
         display: flex;
         align-items: center;
         gap: 30px;
@@ -73,6 +74,7 @@
     }
 
     &__number {
+        font-family: "Poppins", serif;
         width: 71px;
         height: 51px;
         padding-left: 13px;
@@ -121,7 +123,6 @@
         border-radius: 20px;
         height: 556px;
         grid-column: auto / span 4;
-        margin-top: 64px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -144,7 +145,7 @@
     &__form-input {
         background: transparent;
         border:none;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #CACDD8;
         width: 288px;
         padding-bottom: 3px;
         font-size: 14px;

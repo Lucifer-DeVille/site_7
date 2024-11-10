@@ -79,6 +79,9 @@ input, button, select {
     &__menu-link {
         color: $color-text;
         font-size: 16px;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__menu-bold {
@@ -183,6 +186,9 @@ input, button, select {
     &__link {
         color: $color-text;
         text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
@@ -309,7 +315,7 @@ input, button, select {
 }
 
 .link-box {
-    margin-top: 31px;
+    margin-top: 32px;
     margin-bottom: 64px;
 
     &__link {
@@ -364,6 +370,9 @@ input, button, select {
     &__link {
         color: #888;
         font-size: 14px;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__icons {
